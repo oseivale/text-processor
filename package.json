@@ -1,0 +1,15 @@
+{
+  "name": "text-processor",
+  "version": "1.0.0",
+  "description": "Simple text processor project.",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "text-processor"
+  },
+  "author": "Valerie Osei",
+  "license": "ISC"
+}
