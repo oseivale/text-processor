@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Processor</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="content-wrapper">
+      <div>
+        <h1>Text Processor</h1>
+        <p>Enter some text into the textbox below and click SUBMIT. You will see a table of each word and the number of times it occurs in the text sample. Feel free to also sort the words by ascending alphabetical order, or by the number of times the word occurs.</p>
+        <div>
+          <form id="text-processor-form" action="/submit" method="post">
+            <div class="text-label">
+              <label for="text">Enter text below:</label>
+            </div>
+
+            <div>
+              <textarea
+                name=""
+                value=""
+                id="text-content"
+                placeholder="E.g. Lorem ipsum..."
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <input class="submit-btn" type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <div>
+          <h3 class="total-word-count">
+            Total word count:
+            <span id="word-count"></span>
+          </h3>
+        </div>
+      </div>
+
+      <div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Word <button id="alpha-sort">A-Z &#10595;</button></th>
+              <th>Occurs # of times<button id="number-sort">123 &#10595;</button></th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Add rows dynamically -->
+          </tbody>
+          <tbody id="table-body-alpha-sorted">
+            <!-- Add sorted rows dynamically -->
+          </tbody>
+          <tbody id="table-body-number-sorted">
+            <!-- Add sorted rows dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
