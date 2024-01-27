@@ -4,7 +4,8 @@
   "description": "Simple text processor project.",
   "main": "main.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "npm run build"
   },
   "repository": {
     "type": "git",
