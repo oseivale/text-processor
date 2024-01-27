@@ -120,6 +120,11 @@ function submitForm(event) {
     })
 
     wordCount.innerText = appState.getTotalWordCount()
+
+    window.scrollTo({
+        top: 500,
+        behavior: 'smooth'
+    })
 }
 
 function numberFilter(event) {
@@ -138,6 +143,8 @@ function numberFilter(event) {
     })
     wordCount.innerText = appState.getTotalWordCount()
 }
+
+
 
 function filterByLetter() {
 
